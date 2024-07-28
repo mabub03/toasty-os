@@ -25,6 +25,7 @@ modules:
     install:
       # - micro
       # - starship
+      - gnome-disks
       - zsh
       - eza
       - curl
@@ -47,6 +48,7 @@ modules:
        - firefox
        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
        - gnome-shell-extension-background-logo
+       # put the default installed gnome-apps here since we have flatpak versions
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
@@ -96,11 +98,11 @@ modules:
       # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
       # only normal flatpak applications are (like Floorp Lightning web browser in this example).
       # Installing different branches of the same Flatpak is not supported.
-      remove:
+      # remove:
       # - org.gnome.eog
 
 - type: akmods
-  base: main # if not specified, classic "main" base is used by default
+  base: main
   install:
     - v4l2loopback
 
