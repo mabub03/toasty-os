@@ -39,7 +39,7 @@ modules:
       - google-crosextra-caladea-fonts
       - google-carlito-fonts
       - ibm-plex-fonts-all
-      - adw-gtk3
+      - adw-gtk3-theme
       # TODO: remove cosmic-desktop when stable enough to be its own DE or when give up on testing it out
       # terrible to do since silverblue but wanna test out cosmic so until it comes out officialy for an official spin or maybe a beta version gotta deal with this
       - cosmic-desktop
