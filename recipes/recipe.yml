@@ -101,21 +101,21 @@ modules:
       # remove:
       # - org.gnome.eog
 
-- type: akmods
-  base: main
-  install:
-    - v4l2loopback
+  - type: akmods
+    base: main
+    install:
+      - v4l2loopback
 
-- type: gschema-overrides
-  include:
-    - zz1-myoverride.gschema.override
+  - type: gschema-overrides
+    include:
+      - zz1-myoverride.gschema.override
 
-- type: gnome-extensions
-  install:
-    # AppIndicator and KStatusNotifierItem Support
-    - 615
-    # Rounded Window Corners Reborn
-    - 7048
+  - type: gnome-extensions
+    install:
+      # AppIndicator and KStatusNotifierItem Support
+      - 615
+      # Rounded Window Corners Reborn
+      - 7048
     
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
