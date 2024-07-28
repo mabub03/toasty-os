@@ -1,0 +1,23 @@
+[org.gnome.desktop.interface]
+clock-format='24h'
+
+[org.gnome.desktop.interface]
+clock-show-weekday = true
+
+[org.gnome.desktop.interface]
+color-scheme = 'default'
+
+[org.gnome.desktop.interface]
+font-antialiasing = 'rgba'
+
+[org.gnome.desktop.interface]
+font-rgba-order = 'rgb'
+
+[org.gnome.desktop.interface]
+font-hinting = 'slight'
+
+[org.gnome.desktop.interface]
+gtk-theme = 'adw-gtk3'
+
+[org.gnome.desktop.calendar]
+show-weekdate = true
