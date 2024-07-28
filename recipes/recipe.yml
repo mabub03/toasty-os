@@ -21,12 +21,12 @@ modules:
   - type: rpm-ostree
     repos:
       # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-      # - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-$(rpm -E %fedora)/ryanabx-cosmic-epoch-fedora-$(rpm -E %fedora).repo
+      - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-$(rpm -E %fedora)/ryanabx-cosmic-epoch-fedora-$(rpm -E %fedora).repo
       #- https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
     install:
       # - micro
       # - starship
-      - gnome-disks
+      - gnome-disk-utility
       - zsh
       - eza
       - curl
@@ -42,7 +42,7 @@ modules:
       - adw-gtk3
       # TODO: remove cosmic-desktop when stable enough to be its own DE or when give up on testing it out
       # terrible to do since silverblue but wanna test out cosmic so until it comes out officialy for an official spin or maybe a beta version gotta deal with this
-      #- cosmic-desktop
+      - cosmic-desktop
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
