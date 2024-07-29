@@ -77,7 +77,8 @@ modules:
         # org.freedesktop.LinuxAudio.Plugins.LSP
         # org.freedesktop.LinuxAudio.Plugins.MDA
         # org.freedesktop.LinuxAudio.Plugins.ZamPlugins
-        - org.freedesktop.Platform.ffmpeg-full
+        # TODO: figure out a different way to get ffmpeg-full since it is a runtime and won't work here
+        # - org.freedesktop.Platform.ffmpeg-full
         - org.gtk.Gtk3theme.adw-gtk3
         - org.gtk.Gtk3theme.adw-gtk3-dark
         - io.missioncenter.MissionCenter
